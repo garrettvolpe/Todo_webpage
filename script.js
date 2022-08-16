@@ -1,5 +1,7 @@
 //model
 let todos;
+const utc = new Date().toJSON().slice(0,10).replace(/-/g,'-');
+document.getElementById("date-picker").value = utc
 
 const savedTodos = JSON.parse(localStorage.getItem("todos"));
 if (Array.isArray(savedTodos)){
@@ -69,7 +71,6 @@ function deleteToDo (event) {
 function render() {
     // reset the list 
     document.getElementById("todo-list").innerHTML = ''
-
     todos.forEach(function (todo) {
         let element = document.createElement('div');
         element.innerText = todo.title + " " + todo.dueDate;
