@@ -1,0 +1,53 @@
+body{
+    background-color: lightblue;
+}
+
+.body-container {
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border: darkblue 30px solid;
+    border-radius: 30px;
+
+}   
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+    gap: 12px;
+    min-height: 400px;
+}
+
+#todo-title {
+    background-color: lightyellow;
+    border-radius: 15px;
+    display: flex;
+    width: 100%;
+    font-size: 22px;
+    padding-left: 10px;
+
+}
+
+.todo-title {
+    width: 100%;
+}
+
+.add-todo {
+    margin-top: 15px;
+    display: flex;
+
+}
+
+#todo-list {
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}   
+

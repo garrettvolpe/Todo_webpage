@@ -5,14 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <input id="todo-title" type="text"/>
-    <input id="date-picker" type="date"/>
-    <button id="todo-button" onclick="addToDo()">Add Todo</button>
-    
-    <div id="todo-list"></div>
-
+    <div class="body-container">
+        <div class="main-container">
+            <div class="add-todo">
+                <form id="form01" action="demo_form.asp" onsubmit="return false;" >
+                    <div class="todo-title">
+                        <input id="todo-title" type="text" placeholder="Enter todo here"/>
+                    </div>
+                    <div class="date-and-button">
+                        <input id="date-picker" type="date"/>
+                        <button id="todo-button" onclick="addToDo()">Add Todo</button>
+                    </div>
+                </form>
+            </div>
+            <div id="todo-list"></div>
+        </div>
+    </div>
     <script src="script.js"></script>
     
 </body>
